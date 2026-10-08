@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — One-Tap Timer</title>
+<style>
+  :root{color-scheme:light dark;--bg:#ffffff;--fg:#1e293b;--muted:#64748b;--accent:#6366f1;--card:#f1f5f9;}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f172a;--fg:#e2e8f0;--muted:#94a3b8;--card:#1e293b;}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:40px 16px 80px}
+  h1{font-size:1.9rem;margin:0 0 .25em}
+  h2{font-size:1.25rem;margin:1.8em 0 .5em;color:var(--accent)}
+  .meta{color:var(--muted);font-size:.9rem;margin-bottom:2em}
+  .card{background:var(--card);border-radius:14px;padding:16px 20px;margin:1em 0}
+  a{color:var(--accent)}
+  ul{padding-left:1.2em}
+  code{background:var(--card);padding:1px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Chính sách quyền riêng tư</h1>
+  <p class="meta"><strong>One-Tap Timer</strong> · Cập nhật: 08/10/2026</p>
+
+  <p>Ứng dụng <strong>One-Tap Timer</strong> ("ứng dụng") tôn trọng quyền riêng tư
+  của bạn. Tài liệu này giải thích dữ liệu ứng dụng xử lý và cách xử lý.</p>
+
+  <div class="card">
+    <strong>Tóm tắt:</strong> Các preset hẹn giờ của bạn được <strong>lưu cục bộ
+    trên thiết bị</strong>. Ứng dụng không có máy chủ riêng và không bán dữ liệu.
+  </div>
+
+  <h2>1. Dữ liệu lưu cục bộ</h2>
+  <ul>
+    <li>Danh sách preset: tên, biểu tượng, thời gian, màu, cài đặt rung/âm thanh.</li>
+  </ul>
+  <p>Dữ liệu lưu trong bộ nhớ cục bộ (<code>SharedPreferences</code>), không gửi đi
+  đâu. Gỡ ứng dụng sẽ xóa chúng.</p>
+
+  <h2>2. Thông báo &amp; báo thức</h2>
+  <p>Ứng dụng dùng thông báo (Foreground Service trên Android, Live Activities/thông
+  báo cục bộ trên iOS) để hiển thị đếm ngược và báo hết giờ. Các dữ liệu này chỉ
+  nằm trên thiết bị, không truyền ra ngoài.</p>
+
+  <h2>3. Mua hàng trong ứng dụng (RevenueCat)</h2>
+  <p>Giao dịch "mở khóa trọn đời" được xử lý qua
+  <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">RevenueCat</a>:
+  mã định danh ẩn danh do ứng dụng tạo, thông tin giao dịch mua và thông tin thiết
+  bị cơ bản, nhằm xác thực quyền mua. Thanh toán do Google Play xử lý; chúng tôi
+  không nhận thông tin thẻ của bạn.</p>
+
+  <h2>4. Phân tích &amp; báo lỗi (tùy chọn)</h2>
+  <p>Nếu bản cài có bật Firebase Analytics/Crashlytics, ứng dụng gửi dữ liệu
+  <em>ẩn danh</em> về cách dùng và nhật ký sự cố để cải thiện sản phẩm, được mã hóa
+  khi truyền. Nếu không bật, không có dữ liệu phân tích nào được gửi.</p>
+
+  <h2>5. Quyền ứng dụng</h2>
+  <ul>
+    <li>Thông báo, báo thức chính xác (SCHEDULE_EXACT_ALARM), rung — phục vụ chức năng hẹn giờ.</li>
+    <li>Không truy cập danh bạ, vị trí, camera, micro.</li>
+  </ul>
+
+  <h2>6. Trẻ em</h2>
+  <p>Ứng dụng phù hợp mọi lứa tuổi, không chủ đích thu thập dữ liệu từ trẻ em.</p>
+
+  <h2>7. Thay đổi &amp; liên hệ</h2>
+  <p>Chính sách có thể được cập nhật tại trang này. Liên hệ:
+  <strong><a href="mailto:abbadon.dl@gmail.com">abbadon.dl@gmail.com</a></strong>.</p>
+</div>
+</body>
+</html>
